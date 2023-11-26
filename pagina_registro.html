@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ece0ea; /* Color de fondo */
+    }
+    .registration-form {
+      width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .registration-form h2 {
+      text-align: center;
+    }
+    .registration-form input[type="text"],
+    .registration-form input[type="email"],
+    .registration-form input[type="tel"],
+    .registration-form input[type="password"] {
+      width: calc(100% - 20px); /* Utiliza el 100% del ancho con un pequeño margen */
+      margin-bottom: 10px;
+      padding: 8px 10px; 
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    .registration-form input[type="submit"] {
+      width: calc(100% - 20px); /* Ajusta el botón al ancho completo del contenedor */
+      background-color: #ff69b4; /* Color del botón en rosa */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 8px 0; /* Ajusta el espaciado vertical del botón */
+      border-radius: 3px; /* Añadimos borde redondeado */
+      transition: background-color 0.3s ease; /* Transición */
+    }
+    .registration-form input[type="submit"]:hover {
+      background-color: #ff5c9a; 
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ff5c9a;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #d8bddf;
+    }
+  </style>
+</head>
+<body>
+
+<a href="login.html" class="back-button">Atrás</a>
+
+<div class="registration-form">
+  <h2>Registro</h2>
+  <form action="procesar_registro.php" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <input type="password" name="contrasena" placeholder="Contraseña" required>
+    <input type="submit" value="Registrarse">
+  </form>
+</div>
+
+</body>
+</html>
