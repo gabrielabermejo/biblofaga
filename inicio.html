@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenidos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 50px;
+      text-align: center;
+      background-color: #201e20; /* Color de fondo rosado */
+    }
+    
+     /* Resto de tu estilo CSS... */
+
+    /* Estilos para los menús */
+    .dropdown {
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: #ff69b4; /* Color rosado */
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #ff69b4; /* Borde rosado */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease; /* Animación de salto */
+    }
+
+    .dropbtn:hover {
+      transform: translateY(-5px); /* Salta al pasar el cursor */
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1; /* Color de fondo al pasar el cursor */
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    h1 {
+      font-family: 'Press Start 2P', cursive; /* Cambia el tipo de fuente del título */
+      color: #ffffff; /* Color de texto blanco */
+      background-color: #201e20; /* Color de fondo del título */
+      padding: 20px; /* Espaciado interno del título */
+      font-size: 60px; /* Tamaño del texto del título */
+      margin-top: 10px; /* Ajustar margen superior del título */
+    }
+    /* Estilos para el botón de menú */
+    .menu-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1;
+      transition: transform 0.3s ease; /* Transición de la animación */
+    }
+    .menu-btn:hover {
+      transform: translateY(-5px); /* Cambia la posición al pasar el cursor */
+    }
+    .menu-btn span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      margin-bottom: 5px;
+    }
+    /* Estilos para el menú desplegable */
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px; /* Posición del menú */
+      right: 25px; /* Posición del menú */
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu ul li {
+      padding: 8px 0;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 5px 10px;
+    }
+    /* Estilos para el botón "Volver al inicio" */
+    .back-to-login {
+      
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      padding: 8px 12px;
+      background-color: #ff69b4; /* Color rosado */
+      color: #fff;
+      border: 1px solid #ff69b4; /* Borde rosado */
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: transform 0.3s ease; /* Animación de salto */
+    }.search-bar button { /* Aplicar estilos al botón de búsqueda */
+      background-color: #ff69b4; /* Color rosado */
+      color: #fff; /* Texto en color blanco */
+      border: 1px solid #ff69b4; /* Borde rosado */
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      transition: transform 0.3s ease; /* Animación de salto */
+    }
+    .back-to-login:hover,
+    .back-to-login:hover {
+      transform: translateY(-5px); /* Salta al pasar el cursor */
+    }
+    
+    /* Estilos para la barra de búsqueda */
+    .search-bar {
+  margin-top: 20px; /* Espacio superior */
+  width: 800px; /* Ancho del contenedor de búsqueda */
+  margin: 20px auto; /* Establecer márgenes automáticos para centrarlo */
+  display: flex;
+  justify-content: center; /* Centrar contenido horizontalmente */
+}
+
+    .search-bar input[type="text"] {
+      width: calc(100% - 80px); /* Ajustar ancho del input */
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px; /* Estilo del borde izquierdo */
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      width: 80px; /* Ajustar ancho del botón */
+      border-radius: 0 5px 5px 0; /* Estilo del borde derecho */
+      margin-left: -1px; /* Corregir separación entre input y botón */
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <h1>FAGA</h1>
+  <!-- Barra de búsqueda -->
+    <!-- Barra de búsqueda con autocompletado -->
+    <div class="autocomplete">
+      <input type="text" id="inputCarreras" placeholder="Buscar..." onkeyup="autocompletar(this.value)">
+      <button onclick="buscar()">Buscar</button>
+      <div id="opcionesCarreras" class="autocomplete-items" style="display: none;"></div>
+    </div>
+
+    <style>
+      /* ... otros estilos ... */
+      .autocomplete-items div {
+        color: #fff; /* Color blanco para el texto */
+      }
+    </style>
+    <script>
+      // ... (código anterior)
+  
+      function autocompletar(valor) {
+        const opciones = [
+          "Administracion de Empresas",
+          "Contaduría",
+          "Ingenieria Civil",
+          "Ingenieria Industrial",
+          "Ingenieria Electronica",
+          "Derecho",
+          "Comunicación Social",
+          "Psicologia",
+          "Economia",
+          "Arquitectura",
+          "Diseño Grafico",
+          "Ingenieria de Sistemas",
+          "Ingenieria Ambiental",
+          "Medicina",
+          "Odontologia",
+          "Ciencias Politicas y relaciones Internacionales",
+          "Ingenieria Biomedica"
+        ];
+  
+        const opcionesCarreras = document.getElementById('opcionesCarreras');
+        opcionesCarreras.innerHTML = '';
+  
+        opciones.forEach(opcion => {
+          if (opcion.toLowerCase().startsWith(valor.toLowerCase())) {
+            const div = document.createElement('div');
+            div.innerHTML = `<strong>${opcion.substr(0, valor.length)}</strong>${opcion.substr(valor.length)}`;
+            div.addEventListener('click', function() {
+              inputCarreras.value = opcion;
+              opcionesCarreras.style.display = 'none';
+              if (opcion.toLowerCase() === 'administracion de empresas') {
+                window.location.href = 'careers/admin.html';
+              } else if (opcion.toLowerCase() === 'contaduría') {
+                window.location.href = 'careers/contaduria.html';
+              } else if (opcion.toLowerCase() === 'ingenieria civil') {
+                window.location.href = 'careers/ingcivil.html';
+              } else if (opcion.toLowerCase() === 'ingenieria industrial') {
+                window.location.href = 'careers/ingindustrial.html';
+              } else if (opcion.toLowerCase() === 'ingenieria electronica') {
+                window.location.href = 'careers/ingelectronica.html';
+              }  else if (opcion.toLowerCase() === 'derecho') {
+                window.location.href = 'careers/derecho.html';
+              } else if (opcion.toLowerCase() === 'comunicacion social') {
+                window.location.href = 'careers/comunicacion.html';
+              } else if (opcion.toLowerCase() === 'psicologia') {
+                window.location.href = 'careers/psicologia.html';
+              } else if (opcion.toLowerCase() === 'economia') {
+                window.location.href = 'careers/economia.html';
+              } else if (opcion.toLowerCase() === 'arquitectura') {
+                window.location.href = 'careers/arquitectura.html';
+              } else if (opcion.toLowerCase() === 'diseño grafico') {
+                window.location.href = 'careers/diseño.html';
+              } else if (opcion.toLowerCase() === 'ingenieria de sistemas') {
+                window.location.href = 'careers/ingsistemas.html';
+              } else if (opcion.toLowerCase() === 'ingenieria ambiental') {
+                window.location.href = 'careers/ingambiental.html';
+              } else if (opcion.toLowerCase() === 'medicina') {
+                window.location.href = 'careers/medicina.html';
+              } else if (opcion.toLowerCase() === 'odontologia') {
+                window.location.href = 'careers/odontologia.html';
+              } else if (opcion.toLowerCase() === 'Ciencias Politicas y relaciones Internacionales') {
+                window.location.href = 'careers/ciencias.html';
+              } else if (opcion.toLowerCase() === 'ingenieria biomedica') {
+                window.location.href = 'careers/ingbiomedica.html';
+              } 
+            });
+            opcionesCarreras.appendChild(div);
+          }
+        });
+  
+        if (valor.length === 0) {
+          opcionesCarreras.style.display = 'none';
+        } else {
+          opcionesCarreras.style.display = 'block';
+        }
+      }
+  
+      function buscar() {
+        const carrera = inputCarreras.value;
+        if (carrera.toLowerCase() === 'administracion de empresas') {
+          window.location.href = 'careers/admin.html';
+        } else if (carrera.toLowerCase() === 'contaduría') {
+          window.location.href = 'careers/contaduria.html';
+        } else if (carrera.toLowerCase() === 'ingenieria civil') {
+          window.location.href = 'careers/ingcivil.html';
+        } // ... continuar con las demás opciones
+        else {
+          mostrarLibros(carrera);
+        }
+      }
+    </script>
+
+<!-- Menú "Carreras" -->
+<div class="dropdown">
+  <button class="dropbtn">Carreras</button>
+  <div class="dropdown-content">
+    <a href="careers/admin.html">Administracion de Empresas</a>
+    <a href="careers/contaduria.html">Contaduría</a>
+    <a href="careers/ingcivil.html">Ingenieria Civil</a>
+    <a href="careers/ingindustrial.html">Ingenieria Industrial</a>
+    <a href="careers/ingelectronica.html">Ingenieria Electronica</a>
+    <a href="careers/derecho.html">Derecho</a>
+    <a href="careers/comunicacion.html">Comunicación Social</a>
+    <a href="careers/psicologia.html">Psicologia</a>
+    <a href="careers/economia.html">Economia</a>
+    <a href="careers/arquitectura.html">Arquitectura</a>
+    <a href="careers/diseño.html">Diseño Grafico</a>
+    <a href="careers/ingsistemas.html">Ingenieria de Sistemas</a>
+    <a href="careers/ingambiental.html">Ingenieria Ambiental</a>
+    <a href="careers/medicina.html">Medicina</a>
+    <a href="careers/odontologia.html">Odontologia</a>
+    <a href="careers/ciencias.html">Ciencias Politicas y relaciones Internacionales</a>
+    <a href="careers/ingbiomedica.html">Ingenieria Biomedica</a>
+
+  </div>
+</div>
+
+
+
+  <!-- Botón "Volver al inicio" -->
+  <a href="login.html" class="back-to-login">Atrás</a>
+
+  <!-- Botón del menú -->
+  <div class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Contenido del menú desplegable -->
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="perfil.html">Mi perfil</a></li><!-- Enlace que se abrirá en la misma pestaña -->
+      <li><a href="#">Configuración</a></li>
+      <li><a href="#">Saldo</a></li>
+    </ul>
+  </div>
+  <div id="librosContainer"></div>
+  <script>
+    function mostrarLibros(carrera) {
+      fetch('libros.csv') 
+        .then(response => response.text())
+        .then(data => {
+          const libros = data.split('\n'); // Obtener las líneas del archivo CSV
+          const librosContainer = document.getElementById('librosContainer');
+          librosContainer.innerHTML = ''; // Limpiar contenido anterior
+
+          libros.forEach(libro => {
+            const [Carrera, Nombre_del_Libro, Autor] = libro.split(','); // Separar nombre, autor y carrera
+            if (Carrera === carrera) {
+              const libroElement = document.createElement('p');
+              libroElement.textContent = `${Nombre_del_Libro} - ${Autor}`;
+              librosContainer.appendChild(libroElement);
+            }
+          });
+        })
+        .catch(error => {
+          console.error('Error al cargar el archivo:', error);
+        });
+    }
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+      } else {
+        menu.style.display = 'none';
+      }
+    }
+    function mostrarLibros(Carrera) {
+    fetch('libros.csv')
+      .then(response => response.text())
+      .then(data => {
+        const libros = data.split('\n'); // Obtener las líneas del archivo CSV
+        const librosContainer = document.getElementById('librosContainer');
+        librosContainer.innerHTML = ''; // Limpiar contenido anterior
+
+        libros.forEach(libro => {
+          const [Carrera, Nombre_del_Libro, Autor] = libro.split(','); // Separar nombre, autor y carrera
+          if (Carrera === carrera) {
+            const libroElement = document.createElement('p');
+            libroElement.textContent = `${Nombre_del_Libro} - ${Autor}`;
+            librosContainer.appendChild(libroElement);
+          }
+        });
+      })
+      .catch(error => {
+        console.error('Error al cargar el archivo:', error);
+      });
+  }
+  </script>
+</body>
+</html>
+
+
