@@ -1,0 +1,16 @@
+/* Estilos existentes del ejemplo anterior */
+
+/* Nuevos estilos para la animación del botón */
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agregamos una transición de 0.3 segundos al transform */
+  }
+  
+  /* Definimos la animación al pasar el cursor sobre el botón */
+  .submit-btn:hover {
+    transform: translateY(-5px); /* Moveremos el botón hacia arriba (-5px) al pasar el cursor sobre él */
+  }
+  
