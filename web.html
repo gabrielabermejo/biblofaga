@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenidos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 50px;
+      text-align: center;
+      background-color: #201e20; /* Color de fondo */
+    }
+    h1 {
+      font-family: 'Press Start 2P', cursive; /* Cambia el tipo de fuente del título */
+      color: #ffffff; /* Color de texto blanco */
+      background-color: #201e20; /* Color de fondo del título */
+      padding: 20px; /* Espaciado interno del título */
+      font-size: 60px; /* Tamaño del texto del título */
+      margin-top: 10px; /* Ajustar margen superior del título */
+    }
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 50px; /* Ancho de la imagen */
+      height: auto; /* Altura automática según el ancho */
+    }
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .slide-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+    .slide img {
+      max-width: 600px; /* Ajustar el ancho máximo de las imágenes */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: 4px solid #ffffff; /* Agregar un marco a las imágenes */
+      border-radius: 10px; /* Ajustar el radio de borde para obtener bordes redondeados */
+    }
+    .slide .caption {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      color: #ffffff; /* Color del texto de la frase */
+      font-size: 20px; /* Tamaño del texto de la frase */
+      font-weight: bold; /* Hacer que el texto esté en negrita */
+      background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del cuadro detrás del texto */
+      padding: 8px; /* Espaciado dentro del cuadro del texto */
+      border-radius: 5px; /* Radio de borde para suavizar los bordes del cuadro */
+    }
+    .login-btn {
+      position: absolute;
+      top: 10px;
+      left: 1770px; /* Alineación del botón */
+      background-color: #ff69b4;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .login-btn:hover {
+      background-color: #eeeeee;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="logo" src="imagenes/faga.png" alt="Logo">
+  <a href="login.html" class="login-btn">Iniciar Sesión</a>
+
+  <h1>FAGA</h1>
+  
+  <div class="carousel">
+    <div class="prev" onclick="prevSlide()">&#10094;</div>
+    <div class="slide-container">
+      <div class="slide">
+        <img src="imagenes/Biblioteca.JPG" alt="Imagen 1">
+        <div class="caption"><span style="font-size: 24px;">Leer es para la mente lo que el ejercicio es para el cuerpo</span></div>
+      </div>
+      <div class="slide">
+        <img src="imagenes/biblo1.jpg" alt="Imagen 2">
+        <div class="caption"><span style="font-size: 24px;">Un lector vive mil vidas antes de morir</span></div>
+      </div>
+      <!-- Añadir más imágenes dentro de div.slide según sea necesario -->
+    </div>
+    <div class="next" onclick="nextSlide()">&#10095;</div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.querySelectorAll('.slide');
+      if (slideIndex >= slides.length) { slideIndex = 0; }
+      if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      slides[slideIndex].style.display = 'block';
+    }
+
+    function nextSlide() {
+      slideIndex++;
+      showSlides();
+    }
+
+    function prevSlide() {
+      slideIndex--;
+      showSlides();
+    }
+
+    showSlides();
+  </script>
+
+</body>
+</html>
