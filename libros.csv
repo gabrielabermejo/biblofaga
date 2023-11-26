@@ -1,0 +1,86 @@
+Carrera,Nombre_del_Libro,Autor
+Administración de Empresas,"""Administración""",Stephen P. Robbins y Mary Coulter
+Administración de Empresas,"""El Arte de la Guerra""",Sun Tzu
+Administración de Empresas,"""Padre Rico, Padre Pobre""",Robert T. Kiyosaki
+Administración de Empresas,"""La Meta""",Eliyahu M. Goldratt
+Administración de Empresas,"""Dirección de Empresas: Conceptos y Habilidades""",Ricky W. Griffin y Ronald J. Ebert
+Contaduría Pública,"""Contabilidad Financiera""","Warren, Reeve y Duchac"
+Contaduría Pública,"""Contabilidad de Costos""",Charles T. Horngren
+Contaduría Pública,"""Auditoría""",David N. Ricchiute
+Contaduría Pública,"""Normas Internacionales de Información Financiera (NIIF)""",Guillermo Braunbeck
+Contaduría Pública,"""Finanzas Corporativas""","Stephen A. Ross, Randolph W. Westerfield y Jeffrey Jaffe"
+Ingeniería Civil,"""Mecánica para Ingenieros: Estática""",Russell C. Hibbeler
+Ingeniería Civil,"""Mecánica de Materiales""",Ferdinand P. Beer y E. Russell Johnston Jr.
+Ingeniería Civil,"""Ingeniería de Carreteras""",Carlos Kraemer
+Ingeniería Civil,"""Fundamentos de Hidráulica de Tuberías""",Donald W. Harleman
+Ingeniería Civil,"""Diseño de Estructuras de Acero""",William T. Segui
+Ingeniería Industrial,"""Ingeniería Económica""",Leland Blank y Anthony Tarquin
+Ingeniería Industrial,"""Sistemas de Producción: Planeación, Análisis y Control""",Richard W. Muther
+Ingeniería Industrial,"""Ingeniería de Métodos: Tiempos y Movimientos""",Benjamin W. Niebel
+Ingeniería Industrial,"""Investigación de Operaciones: Aplicaciones y Algoritmos""",Wayne L. Winston
+Ingeniería Industrial,"""Gestión de la Calidad""",David Goetsch y Stanley Davis
+Ingeniería Electrónica,"""Dispositivos Electrónicos y Circuitos""",Robert L. Boylestad y Louis Nashelsky
+Ingeniería Electrónica,"""Principios de Comunicaciones""",Rodger E. Ziemer y William H. Tranter
+Ingeniería Electrónica,"""Microelectrónica: Circuitos y Dispositivos""",Mark N. Horenstein
+Ingeniería Electrónica,"""Electrónica Digital: Principios y Aplicaciones""",Roger L. Tokheim
+Ingeniería Electrónica,"""Ingeniería de Sistemas de Comunicación""",John G. Proakis y Masoud Salehi
+Derecho,"""Introducción al Estudio del Derecho""",Eduardo García Maynez
+Derecho,"""Teoría Pura del Derecho""",Hans Kelsen
+Derecho,"""Derecho Constitucional""",Francisco Burgoa
+Derecho,"""Derecho Civil: Parte General""",Rafael Rojina Villegas
+Derecho,"""Teoría General del Proceso""",Cipriano Gómez Lara
+Comunicación Social y Periodismo,"""Teorías de la Comunicación""",Massimo Di Felice
+Comunicación Social y Periodismo,"""Ética para Amador""",Fernando Savater
+Comunicación Social y Periodismo,"""Periodismo Escrito""",Gonzalo Martin Vivaldi
+Comunicación Social y Periodismo,"""Comunicación y Sociedad""",Manuel Martín Algarra
+Comunicación Social y Periodismo,"""Técnicas de Comunicación y Relaciones Públicas""",María del Carmen Galindo
+Psicología,"""Introducción a la Psicología""",Charles G. Morris y Albert A. Maisto
+Psicología,"""Psicología de la Personalidad""",Jerry M. Burger
+Psicología,"""Psicología Social""","Elliot Aronson, Timothy D. Wilson y Robin M. Akert"
+Psicología,"""Neurociencia Cognitiva""","Michael S. Gazzaniga, Richard B. Ivry y George R. Mangun"
+Psicología,"""Psicopatología: Comprendiendo la Conducta Anormal""","David Sue, Derald Wing Sue y Stanley Sue"
+Economía,"""Principios de Economía""",N. Gregory Mankiw
+Economía,"""Microeconomía""",Robert S. Pindyck y Daniel L. Rubinfeld
+Economía,"""Macroeconomía""",Olivier Blanchard
+Economía,"""Economía Internacional""",Paul Krugman y Maurice Obstfeld
+Economía,"""Economía de la Empresa""",Paul Keat y Philip K. Y. Young
+Arquitectura,"""Historia de la Arquitectura Moderna""",Leonardo Benevolo
+Arquitectura,"""Diseño de Espacios Urbanos""",Rob Krier
+Arquitectura,"""Manual del Arquitecto Descalzo""",Johan van Lengen
+Arquitectura,"""Arquitectura: Forma, Espacio y Orden""",Francis D. K. Ching
+Arquitectura,"""Dibujo y Proyecto en la Carrera de Arquitectura""",Francisco Asensio Cerver
+Diseño Gráfico,"""Diseño Gráfico: Principios y Tipografía""","David Dabner, Sandra Stewart y Eric Zempol"
+Diseño Gráfico,"""El Diseño del Siglo XX""",Charlotte J.
+Diseño Gráfico,"""Manual de Diseño Editorial""",Jorge de Buen Unna
+Diseño Gráfico,"""Color, Mensaje y Comunicación Gráfica""",Massimo Vignelli
+Diseño Gráfico,"""Fundamentos del Diseño Gráfico""",Gavin Ambrose y Paul Harris
+Ingeniería de Sistemas y Computación,"""Estructuras de Datos y Algoritmos""","Alfred V. Aho, John E. Hopcroft y Jeffrey D. Ullman"
+Ingeniería de Sistemas y Computación,"""Introducción a la Ingeniería de Software""",Ian Sommerville
+Ingeniería de Sistemas y Computación,"""Redes de Computadoras""",Andrew S. Tanenbaum y David J. Wetherall
+Ingeniería de Sistemas y Computación,"""Sistemas Operativos Modernos""",Andrew S. Tanenbaum y Herbert Bos
+Ingeniería de Sistemas y Computación,"""Ingeniería del Software: Un Enfoque Práctico""",Roger S. Pressman
+Ingeniería Ambiental,"""Fundamentos de Ingeniería Ambiental""",Davis Mackenzie L. Jr. y David A. Cornwell
+Ingeniería Ambiental,"""Tratamiento de Aguas Residuales""",Metcalf & Eddy
+Ingeniería Ambiental,"""Ecología: Conceptos y Aplicaciones""",Manuel C. Molles Jr.
+Ingeniería Ambiental,"""Gestión Ambiental""","Juan Carlos Martín, María José González y José María Díaz"
+Ingeniería Ambiental,"""Evaluación de Impacto Ambiental: Conceptos y Métodos""",Yvonne V. Chang
+Medicina,"""Gray's Anatomy: The Anatomical Basis of Clinical Practice""",Susan Standring
+Medicina,"""Harrison's Principles of Internal Medicine""","Dennis L. Kasper, Anthony S. Fauci, Stephen L. Hauser, Dan L. Longo, J. Larry Jameson y Joseph Loscalzo"
+Medicina,"""Robbins & Cotran Pathologic Basis of Disease""","Vinay Kumar, Abul K. Abbas y Jon C. Aster"
+Medicina,"""Netter's Atlas of Human Anatomy""",Frank H. Netter
+Medicina,"""Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy""","David E. Golan, Armen H. Tashjian Jr., Ehrin J. Armstrong y April W. Armstrong"
+Odontología,"""Odontología Restauradora y Estética""",Ronald E. Goldstein y Stephen J. Chu
+Odontología,"""Tratado de Periodontología Clínica e Implantología Odontológica""",Juan L. Carranza y Michael G. Newman
+Odontología,"""Endodoncia: Técnica y Fundamentos""",Ilson José Soares y Carlos Estrela
+Odontología,"""Cirugía Bucal: Patología y Técnica""","James R. Hupp, Myron R. Tucker y Edward Ellis III"
+Odontología,"""Ortodoncia: Principios y Técnicas Actuales""","Lee W. Graber, Robert L. Vanarsdall Jr. y Katherine W. L. Vig"
+Ciencias Políticas y Relaciones Internacionales,"""Teoría de la Justicia""",John Rawls
+Ciencias Políticas y Relaciones Internacionales,"""El Choque de Civilizaciones y la Reconfiguración del Orden Mundial""",Samuel P. Huntington
+Ciencias Políticas y Relaciones Internacionales,"""Política Internacional: Conceptos, Teorías y Problemas Contemporáneos""",Robert J. Art y Robert Jervis
+Ciencias Políticas y Relaciones Internacionales,"""La Política""",Aristóteles
+Ciencias Políticas y Relaciones Internacionales,"""Teoría de las Relaciones Internacionales""",Ken Booth y Steve Smith
+Ingeniería Biomédica,"""Principles of Biomedical Instrumentation""",Andrew G. Webb
+Ingeniería Biomédica,"""Introduction to Biomedical Engineering""","John Enderle, Susan M. Blanchard y Joseph Bronzino"
+Ingeniería Biomédica,"""Biomechanics: Concepts and Applications""","Cees Oomens, Marcel Brekelmans y Frank Baaijens"
+Ingeniería Biomédica,"""Bioelectricity: A Quantitative Approach""",Roger Barr
+Ingeniería Biomédica,"""Biomedical Signal Processing and Signal Modeling""",Metin Akay
